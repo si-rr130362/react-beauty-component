@@ -1,7 +1,7 @@
 .si-card {
     max-width: 20rem;
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: var(--radius);
     box-shadow: 0 0 10px var(--color-primary-100);
     margin: 20px;
     transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* add transition effect */
@@ -11,13 +11,13 @@
   
   .si-card:hover {
     box-shadow: 0 0 10px var(--color-primary-200);
-    transform: translateY(-5px);
+    transform: translateY(var(--float));
   }
   
   .si-card img {
     max-width: 100%;
     height: auto;
-    border-radius: 15px 15px 0 0;
+    border-radius: var(--radius) var(--radius) 0 0;
   }
   
   .card-content {
@@ -36,7 +36,7 @@
     font-size: 14px;
     margin-bottom: 20px;
     line-height: 20px;
-    color: #666;
+    color: var(--color-gray);
   }
   
   .card-content button {
