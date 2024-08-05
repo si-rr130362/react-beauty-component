@@ -21,9 +21,9 @@ const TreeNode: React.FC<TreeNodeProps> = ({ label, link, children }) => {
       <div className="node-label" onClick={handleToggle}>
         {label}
         <span className={`expand-icon ${isOpen ? "rotate" : ""}`}>
-            {Array.isArray(children) && children.length > 0 && (
-                <Icon icon={"arrow-left"} />
-            )}
+          {Array.isArray(children) && children.length > 0 && (
+            <Icon icon={"arrow-left"} />
+          )}
         </span>
       </div>
       <div className={`children-container ${isOpen ? "open" : ""}`}>

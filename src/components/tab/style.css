@@ -1,35 +1,35 @@
 /* style.css */
 .tabs {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .tab-buttons {
-    display: flex;
-    gap: 0.5rem;
-  }
-  
-  .tab-button {
-    display: block;
-    padding: 20px 40px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
-    border-radius: var(--radius) var(--radius) 0 0;
-    background-color: var(--color-primary-300);
-  }
-  
-  .tab-button:hover {
-    background-color: var(--color-primary);
-    color: var(--color-black);
-  }
-  
-  .tab-button.active {
-    background-color: var(--color-black);
-    color: var(--color-black);
-  }
-  
-  .tab-content {
-    animation: fadeIn 0.5s ease;
-    background-color: var(--color-black);
-    padding: 1rem;
-  }
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.tab-button {
+  display: block;
+  padding: 20px 40px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  border-radius: var(--radius) var(--radius) 0 0;
+  background-color: var(--color-primary-300);
+}
+
+.tab-button:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.tab-button.active {
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+
+.tab-content {
+  animation: fadeIn 0.5s ease;
+  background-color: var(--color-white);
+  padding: 1rem;
+}

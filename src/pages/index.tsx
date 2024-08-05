@@ -10,7 +10,7 @@ export default function Pages() {
   return (
     <div>
       <Routes>
-      <Route path="/styles" element={<StylesPage />} />
+        <Route path="/styles"  element={<StylesPage />} />
         <Route path="/input"  element={<InputPage />} />
         <Route path="/button" element={<ButtonPage />} />
         <Route path="/card"   element={<CardPage />} />
