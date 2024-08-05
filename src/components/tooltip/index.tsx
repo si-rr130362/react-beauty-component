@@ -7,20 +7,28 @@ interface TooltipProps {
 }
 
 const Tooltip: React.FC<TooltipProps> = ({ text, children }) => {
-	const [isHovered, setIsHovered] = useState(false);
+	const [isHovered, setIsHovered] = useState(0);
 
 	const handleMouseEnter = () => {
-		setIsHovered(true);
+		setIsHovered(1);
 	};
 
 	const handleMouseLeave = () => {
-		setIsHovered(false);
+		setIsHovered(2);
 	};
 
 	return (
 		<div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
 			<span className="tooltip-label">{children}</span>
-			<div className={`tooltip ${isHovered ? "tooltip-hover" : "tooltip-hoverout"}`}>
+			<div
+        className={`tooltip ${
+          isHovered === 1
+            ? "tooltip-hover"
+            : isHovered === 2
+            ? "tooltip-hoverout"
+            : ""
+        }`}
+      >
 				<p>{text}</p>
 			</div>
 		</div>
